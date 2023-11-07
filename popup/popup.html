@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>AUTO-PROJIFY</title>
+		<style>
+			#error-message {
+				display: none;
+				color: red;
+				margin-bottom: 10px;
+			}
+			#trigger {
+				padding: 8px 15px;
+				cursor: pointer;
+				background-color: #007BFF;
+				color: white;
+				border: none;
+				border-radius: 4px;
+				transition: background-color 0.2s;
+			}
+			#trigger:hover {
+				background-color: #0056b3;
+			}
+			#tasksList {
+				margin-top: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Use exciting icon e.g. lightning bolt ⚡️ Unicode: U+26A1 U+FE0F, UTF-8: E2 9A A1 EF B8 8F-->
+		<button id="trigger"> <span id="icon"> ⚡ </span> Trigger Auto-Projify</button>
+		<div id="error-message">
+			<span>❌ Failed to Extract!</span>
+		</div>
+		<div id="success_message" style="display: none;">
+			<span>✅ Tasks Synced Successfully!</span>
+		</div>
+		<div id="dueDatesContainer"></div>
+		<script src="popup.js"></script>
+	</body>
+</html>
